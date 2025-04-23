@@ -9,9 +9,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        services: resolve(__dirname, 'src/pages/services.html'),
-        projects: resolve(__dirname, 'src/pages/projects.html'),
-        contact: resolve(__dirname, 'src/pages/contact.html')
+        services: resolve(__dirname, 'public/pages/services.html'),
+        projects: resolve(__dirname, 'public/pages/projects.html'),
+        contact: resolve(__dirname, 'public/pages/contact.html')
       },
     },
     outDir: 'dist'

@@ -45,59 +45,95 @@
     </a>
 
     <!-- == En-tête de la page == -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm" role="banner">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
         <div class="container mx-auto px-4 sm:px-6 py-6">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <a href="/" class="flex items-center focus-visible" aria-label="Retour à l'accueil - Coreasofts">
+                    <a href="/" class="flex items-center focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
                         <span class="text-2xl font-bold text-blue-600">Coreasofts</span>
                     </a>
                 </div>
 
                 <!-- Navigation Desktop -->
-                <nav class="hidden md:flex" aria-label="Navigation principale">
+                <nav class="hidden md:block" aria-label="Navigation principale">
                     <ul class="flex space-x-8">
-                        <li><a href="#accueil"
-                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus-visible rounded px-2 py-1">Accueil</a>
+                        <li>
+                            <a href="#accueil"
+                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1">
+                                Accueil
+                            </a>
                         </li>
-                        <li><a href="./src/pages/Services.html"
-                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus-visible rounded px-2 py-1">Services</a>
+                        <li>
+                            <a href="./src/pages/Services.html"
+                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1">
+                                Services
+                            </a>
                         </li>
-                        <li><a href="./src/pages/Projets.html"
-                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus-visible rounded px-2 py-1">Projets</a>
+                        <li>
+                            <a href="./src/pages/Projets.html"
+                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1">
+                                Projets
+                            </a>
                         </li>
-                        <li><a href="./src/pages/Contact.html"
-                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus-visible rounded px-2 py-1">Contact</a>
+                        <li>
+                            <a href="./src/pages/Contact.html"
+                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1">
+                                Contact
+                            </a>
                         </li>
                     </ul>
                 </nav>
 
                 <!-- Mobile menu button -->
                 <button id="mobile-menu-button"
-                    class="md:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none focus-visible"
-                    aria-label="Menu mobile" aria-expanded="false" aria-controls="mobile-menu">
-                    <i class='bx bx-menu text-2xl'></i>
+                    class="md:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    aria-label="Menu mobile" aria-expanded="false">
+                    <!-- Icône menu (bars) -->
+                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <!-- Icône fermer (x) - cachée par défaut -->
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
                 </button>
             </div>
         </div>
 
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <div id="mobile-menu"
+            class="md:hidden hidden bg-white shadow-lg transition-all duration-300 ease-in-out overflow-hidden">
             <div class="container mx-auto px-4 py-3">
                 <nav aria-label="Navigation mobile">
                     <ul class="space-y-2">
-                        <li><a href="../index.html"
-                                class="block px-3 py-2 rounded-md font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors focus-visible">Accueil</a>
+                        <li>
+                            <a href="#accueil"
+                                class="block px-3 py-2 rounded-md font-light text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                Accueil
+                            </a>
                         </li>
-                        <li><a href="#"
-                                class="block px-3 py-2 rounded-md font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors focus-visible">Services</a>
+                        <li>
+                            <a href="#"
+                                class="block px-3 py-2 rounded-md font-light text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                Services
+                            </a>
                         </li>
-                        <li><a href="./src/pages/Projets.html"
-                                class="block px-3 py-2 rounded-md font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors focus-visible">Projets</a>
+                        <li>
+                            <a href="./projects.html"
+                                class="block px-3 py-2 rounded-md font-light text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                Projets
+                            </a>
                         </li>
-                        <li><a href="./src/pages/Contact.html"
-                                class="block px-3 py-2 rounded-md font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors focus-visible">Contact</a>
+                        <li>
+                            <a href="./contact.html"
+                                class="block px-3 py-2 rounded-md font-light text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                Contact
+                            </a>
                         </li>
                     </ul>
                 </nav>

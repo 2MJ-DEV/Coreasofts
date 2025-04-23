@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Coreasofts - Agence digitale spécialisée dans la création de solutions web et mobiles sur mesure en RDC. Développement, design et stratégie digitale.">
+    <meta name="keywords"
+        content="agence web, développement site, application mobile, RDC, Kinshasa, digital, Coreasofts">
+    <meta name="author" content="Coreasofts">
+    <meta property="og:title" content="Coreasofts - Solutions Digitales Innovantes">
+    <meta property="og:description"
+        content="Agence digitale spécialisée dans la création de solutions web et mobiles sur mesure en RDC.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.coreasofts.com">
+    <meta property="og:image" content="https://www.coreasofts.com/">
+    <meta name="theme-color" content="#2563eb">
+    <title>Coreasofts | Agence Web & Solutions Digitales en RDC</title>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
+
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <!-- Skip to content link for keyboard users -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded focus:shadow-lg focus:text-primary">
+        Passer au contenu principal
+    </a>
+
+    <!-- == En-tête de la page == -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm" role="banner">
+        <div class="container mx-auto px-4 sm:px-6 py-6">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center focus-visible" aria-label="Retour à l'accueil - Coreasofts">
+                        <span class="text-2xl font-bold text-blue-600">Coreasofts</span>
+                    </a>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <nav class="hidden md:flex" aria-label="Navigation principale">
+                    <ul class="flex space-x-8">
+                        <li><a href="#accueil"
+                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus-visible rounded px-2 py-1">Accueil</a>
+                        </li>
+                        <li><a href="./src/pages/Services.html"
+                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus-visible rounded px-2 py-1">Services</a>
+                        </li>
+                        <li><a href="./src/pages/Projets.html"
+                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus-visible rounded px-2 py-1">Projets</a>
+                        </li>
+                        <li><a href="./src/pages/Contact.html"
+                                class="font-medium text-gray-700 hover:text-blue-600 transition-colors focus-visible rounded px-2 py-1">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button"
+                    class="md:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none focus-visible"
+                    aria-label="Menu mobile" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class='bx bx-menu text-2xl'></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="container mx-auto px-4 py-3">
+                <nav aria-label="Navigation mobile">
+                    <ul class="space-y-2">
+                        <li><a href="../index.html"
+                                class="block px-3 py-2 rounded-md font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors focus-visible">Accueil</a>
+                        </li>
+                        <li><a href="#"
+                                class="block px-3 py-2 rounded-md font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors focus-visible">Services</a>
+                        </li>
+                        <li><a href="./src/pages/Projets.html"
+                                class="block px-3 py-2 rounded-md font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors focus-visible">Projets</a>
+                        </li>
+                        <li><a href="./src/pages/Contact.html"
+                                class="block px-3 py-2 rounded-md font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors focus-visible">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-500 to-indigo-700 text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Des Solutions Web Sur Mesure</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Nous créons des sites web performants et designs pour propulser
+                votre business en ligne.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nos Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Développement Web</h3>
+                    <p class="text-gray-600">Sites vitrines, e-commerce ou applications sur mesure avec les dernières
+                        technologies.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-mobile-screen text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Design Responsive</h3>
+                    <p class="text-gray-600">Des interfaces adaptées à tous les appareils pour une expérience
+                        utilisateur optimale.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-rocket text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">SEO & Performance</h3>
+                    <p class="text-gray-600">Optimisation pour les moteurs de recherche et vitesse de chargement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Ils nous font confiance</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Témoignage 1 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mr-4">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Marie Dupont</h4>
+                            <p class="text-gray-500">CEO, EcoShop</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Notre trafic a augmenté de 200% grâce à leur travail sur le SEO et la
+                        refonte du site."</p>
+                </div>
+
+                <!-- Témoignage 2 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mr-4">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Jean Martin</h4>
+                            <p class="text-gray-500">Directeur, TechInnov</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"L'équipe a su comprendre nos besoins complexes et livrer une application
+                        parfaite dans les délais."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Prêt à transformer votre présence en ligne ?</h2>
+            <a href="#contact"
+                class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">Nous
+                contacter</a>
+        </div>
+    </section>
+
+    <footer class="">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 mt-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center">
+                        <img src="" class="h-8 me-3" alt="Coreasofts" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap">Coreasofts</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Liens court</h2>
+                        <ul class="text-gray-500  font-medium">
+                            <li class="mb-4">
+                                <a href="https://flowbite.com/" class="hover:underline">Services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Projets</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Nos réseaux</h2>
+                        <ul class="text-gray-500  font-medium">
+                            <li class="mb-4">
+                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-zinc-950/5 sm:mx-auto lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center ">&copy; 2025. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <span class="text-sm text-gray-500 sm:text-center ">By Coreasofts</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

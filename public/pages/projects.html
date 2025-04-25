@@ -147,7 +147,7 @@
         <section class="container mx-auto mb-5 md:mt-12 p-4 lg:p-0">
             <div class="py-5 items-center">
                 <div class="space-y-3">
-                    <h2 class="text-4xl font-bold text-balance">Nos projets</h2>
+                    <h2 class="text-4xl font-light text-balance">Nos projets</h2>
                     <p class="mb-3 text-zinc-600 dark:text-zinc-400 text-balance">
                         Ici, nous partageons les projet que nous avons réaliter
                     </p>
@@ -155,7 +155,7 @@
             </div>
         </section>
     
-        <!-- Articles filters -->
+        <!-- Projects filters -->
         <section class="p-4 pt-7 lg:p-0">
             <div class="flex items-center gap-4">
                 <!-- Dropdown pour mobile -->
@@ -165,9 +165,6 @@
                         <option value="all">Tous</option>
                         <option value="frontend">Frontend</option>
                         <option value="backend">Backend</option>
-                        <option value="design">Design</option>
-                        <option value="technologies">Technologies</option>
-                        <option value="ia">IA</option>
                     </select>
                 </div>
     
@@ -186,32 +183,21 @@
                             class="tab-btn px-4 py-2 text-zinc-500 border-b-2 border-transparent">
                             Backend
                         </button>
-                        <button data-category="design"
-                            class="tab-btn px-4 py-2 text-zinc-500 border-b-2 border-transparent">
-                            Design
-                        </button>
-                        <button data-category="technologies"
-                            class="tab-btn px-4 py-2 text-zinc-500 border-b-2 border-transparent">
-                            Technologies
-                        </button>
-                        <button data-category="ia" class="tab-btn px-4 py-2 text-zinc-500 border-b-2 border-transparent">
-                            IA
-                        </button>
                     </nav>
                 </div>
             </div>
         </section>
     
-        <!-- Contenu des articles -->
-        <section id="articles" class="px-5 lg:p-0 mb-10">
+        <!-- Projects section -->
+        <section id="projects" class="px-5 lg:p-0 mb-10">
             <!-- Frontend -->
             <div data-category="frontend" class="article-category pt-7 h-max">
-                <div class="grid grid-cols-1 gap-7 lg:grid-cols-3">
+                <div class="grid grid-cols-1 lg:grid-cols-3">
                     <article
                         class="items-center border p-4 rounded-2xl border-zinc-950/5 dark:border-white/5 bg-white dark:bg-white/5">
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 border p-4 rounded-2xl border-zinc-950/5">
                             <div class="relative h-full overflow-hidden">
-                                <img class="rounded-lg transition duration-700 h-full w-full object-cover ease-in-out"
+                                <img class="rounded-lg transition duration-700 h-70 w-full object-cover ease-in-out"
                                     src="https://images.unsplash.com/photo-1588601515934-48cd862f9955?q=85&w=275&h=275&fit=crop" alt="" />
                                 <span
                                     class="absolute top-4 right-4 w-max font-semibold rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Frontend</span>
@@ -233,24 +219,24 @@
                                         Molestias explicabo corporis voluptatem?
                                     </p>
     
-                                    <a href="#"
-                                        class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                                        En savoir plus
-    
-                                        <span aria-hidden="true"
-                                            class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                            &rarr;
-                                        </span>
-                                    </a>
+                                    <div class="">
+                                        <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                                            View
+                                        
+                                            <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                                                &rarr;
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </article>
                     <article
                         class="items-center border p-4 rounded-2xl border-zinc-950/5 dark:border-white/5 bg-white dark:bg-white/5">
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 border p-4 rounded-2xl border-zinc-950/5">
                             <div class="relative h-full overflow-hidden">
-                                <img class="rounded-lg transition duration-700 h-full w-full object-cover ease-in-out"
+                                <img class="rounded-lg transition duration-700 h-70 w-full object-cover ease-in-out"
                                     src="https://images.unsplash.com/photo-1676276376474-74ab06e89307?q=85&w=275&h=275&fit=crop" alt="" />
                                 <span
                                     class="absolute top-4 right-4 w-max font-semibold rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Frontend</span>
@@ -272,24 +258,24 @@
                                         Molestias explicabo corporis voluptatem?
                                     </p>
     
-                                    <a href="#"
-                                        class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                                        En savoir plus
-    
-                                        <span aria-hidden="true"
-                                            class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                            &rarr;
-                                        </span>
-                                    </a>
+                                    <div class="">
+                                        <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                                            View
+                                    
+                                            <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                                                &rarr;
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </article>
                     <article
                         class="items-center border p-4 rounded-2xl border-zinc-950/5 dark:border-white/5 bg-white dark:bg-white/5">
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 border p-4 rounded-2xl border-zinc-950/5">
                             <div class="relative h-full overflow-hidden">
-                                <img class="rounded-lg transition duration-700 h-full w-full object-cover ease-in-out"
+                                <img class="rounded-lg transition duration-700 h-70 w-full object-cover ease-in-out"
                                     src="https://images.unsplash.com/photo-1544006658-5ed4d689eb5e?q=85&w=275&h=275&fit=crop" alt="" />
                                 <span
                                     class="absolute top-4 right-4 w-max font-semibold rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Frontend</span>
@@ -311,15 +297,15 @@
                                         Molestias explicabo corporis voluptatem?
                                     </p>
     
-                                    <a href="#"
-                                        class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                                        En savoir plus
-    
-                                        <span aria-hidden="true"
-                                            class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                            &rarr;
-                                        </span>
-                                    </a>
+                                    <div class="">
+                                        <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                                            View
+                                    
+                                            <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                                                &rarr;
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -330,9 +316,9 @@
             <div data-category="backend" class="article-category hidden grid grid-cols-1 gap-7 pt-7 lg:grid-cols-3">
                 <article
                     class="items-center border p-4 rounded-2xl border-zinc-950/5 dark:border-white/5 bg-white dark:bg-white/5">
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 border p-4 rounded-2xl border-zinc-950/5">
                         <div class="relative h-full overflow-hidden">
-                            <img class="rounded-lg transition duration-700 h-full w-full object-cover ease-in-out"
+                            <img class="rounded-lg transition duration-700 h-70 w-full object-cover ease-in-out"
                                 src="https://images.unsplash.com/photo-1677695959861-5b875fd70a21?q=85&w=275&h=275&fit=crop" alt="" />
                             <span
                                 class="absolute top-4 right-4 w-max font-semibold rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Backend</span>
@@ -354,24 +340,25 @@
                                     Molestias explicabo corporis voluptatem?
                                 </p>
     
-                                <a href="#"
-                                    class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                                    En savoir plus
-    
-                                    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                        &rarr;
-                                    </span>
-                                </a>
+                                <div class="">
+                                    <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                                        View
+                                
+                                        <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                                            &rarr;
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </article>
                 <article
                     class="items-center border p-4 rounded-2xl border-zinc-950/5 dark:border-white/5 bg-white dark:bg-white/5">
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 border p-4 rounded-2xl border-zinc-950/5">
                         <div class="relative h-full overflow-hidden">
-                            <img class="rounded-lg transition duration-700 h-full w-full object-cover ease-in-out"
-                                src="../assets/articles/img_article_5.webp" alt="" />
+                            <img class="rounded-lg transition duration-700 h-70 w-full object-cover ease-in-out"
+                                src="" alt="" />
                             <span
                                 class="absolute top-4 right-4 w-max font-semibold rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Backend</span>
                         </div>
@@ -392,24 +379,25 @@
                                     Molestias explicabo corporis voluptatem?
                                 </p>
     
-                                <a href="#"
-                                    class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                                    En savoir plus
-    
-                                    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                        &rarr;
-                                    </span>
-                                </a>
+                                <div class="">
+                                    <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                                        View
+                                
+                                        <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                                            &rarr;
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </article>
                 <article
                     class="items-center border p-4 rounded-2xl border-zinc-950/5 dark:border-white/5 bg-white dark:bg-white/5">
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 border p-4 rounded-2xl border-zinc-950/5">
                         <div class="relative h-full overflow-hidden">
-                            <img class="rounded-lg transition duration-700 h-full w-full object-cover ease-in-out"
-                                src="../assets/articles/img_article_2.webp" alt="" />
+                            <img class="rounded-lg transition duration-700 h-70 w-full object-cover ease-in-out"
+                                src="" alt="" />
                             <span
                                 class="absolute top-4 right-4 w-max font-semibold rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Backend</span>
                         </div>
@@ -430,69 +418,24 @@
                                     Molestias explicabo corporis voluptatem?
                                 </p>
     
-                                <a href="#"
-                                    class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                                    En savoir plus
-    
-                                    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                        &rarr;
-                                    </span>
-                                </a>
+                                <div class="">
+                                    <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                                        View
+                                
+                                        <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                                            &rarr;
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </article>
             </div>
-            <!-- design -->
-            <div data-category="design" class="article-category hidden py-7 grid grid-cols-1 gap-7 pt-7 lg:grid-cols-3">
-                <article
-                    class="items-center border p-4 rounded-2xl border-zinc-950/5 dark:border-white/5 bg-white dark:bg-white/5">
-                    <div class="flex flex-col gap-4">
-                        <div class="relative h-full overflow-hidden">
-                            <img class="rounded-lg transition duration-700 h-full w-full object-cover ease-in-out"
-                                src="../assets/articles/img_article_3.webp" alt="" />
-                            <span
-                                class="absolute top-4 right-4 w-max font-semibold rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Design</span>
-                        </div>
-                        <div class="flex flex-col">
-                            <a href="#">
-                                <h5 class="mb-2 text-left text-lg font-semibold">
-                                    The Impact of Technology on the Workplace: How Technology is
-                                    Changing
-                                </h5>
-                            </a>
-                            <div class="">
-                                <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Recusandae dolores, possimus pariatur animi temporibus
-                                    nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                                    quidem, mollitia itaque minus soluta, voluptates neque
-                                    explicabo tempora nisi culpa eius atque dignissimos.
-                                    Molestias explicabo corporis voluptatem?
-                                </p>
-    
-                                <a href="#"
-                                    class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                                    En savoir plus
-    
-                                    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                        &rarr;
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <!-- Technologie -->
-            <div data-category="technologies"
-                class="article-category hidden py-7 grid grid-cols-1 gap-7 pt-7 lg:grid-cols-3"></div>
-            <!-- IA -->
-            <div data-category="ia" class="article-category hidden py-7 grid grid-cols-1 gap-7 pt-7 lg:grid-cols-3"></div>
         </section>
     </main>
 
-    <footer class="">
+    <footer class="border-t border-zinc-950/5">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 mt-6 lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
@@ -504,7 +447,7 @@
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Liens court</h2>
-                        <ul class="text-gray-600 font-medium">
+                        <ul class="text-gray-600 font-light">
                             <li class="">
                                 <a href="/index.html" class="hover:underline">Accueil</a>
                             </li>
@@ -521,15 +464,21 @@
                     </div>
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Nos réseaux</h2>
-                        <ul class="text-gray-600  font-medium">
+                        <ul class="text-gray-600 flex gap-3 font-light">
                             <li class="">
-                                <a href="#" class="hover:underline ">Github</a>
+                                <a href="#" class=" ">
+                                    <i class='bx bxl-github text-3xl  hover:text-blue-600 transition duration-300'></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="#" class="hover:underline">Discord</a>
+                                <a href="#" class="">
+                                    <i class='bx bxl-discord-alt text-3xl  hover:text-blue-600 transition duration-300'></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="#" class="hover:underline">Twitter</a>
+                                <a href="#" class="">
+                                    <i class='bx bxl-twitter text-3xl hover:text-blue-600 transition duration-300'></i>
+                                </a>
                             </li>
                         </ul>
                     </div>

@@ -141,197 +141,183 @@
         </div>
     </header>
 
-    <!-- Hero Section Contact -->
-    <section class="bg-gradient-to-r from-blue-500 to-indigo-700 text-white py-20">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Contactez-nous</h1>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Une question ? Un projet ? Notre équipe vous répond sous 24h.</p>
-        </div>
-    </section>
-
-    <!-- Section Contact Principale -->
-    <section id="contact" class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12">
-                <!-- Formulaire de Contact -->
-                <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Envoyez-nous un message</h2>
-
-                    <form id="contactForm" class="space-y-6">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div>
-                                <label for="firstname" class="block text-sm font-medium text-gray-700 mb-1">Prénom
-                                    *</label>
-                                <input type="text" id="firstname" name="firstname" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                            </div>
-                            <div>
-                                <label for="lastname" class="block text-sm font-medium text-gray-700 mb-1">Nom *</label>
-                                <input type="text" id="lastname" name="lastname" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-                            <input type="email" id="email" name="email" required
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-
-                        <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Téléphone</label>
-                            <input type="tel" id="phone" name="phone"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-
-                        <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Sujet *</label>
-                            <select id="subject" name="subject" required
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                                <option value="" disabled selected>Sélectionnez un sujet</option>
-                                <option value="Devis">Demande de devis</option>
-                                <option value="Support">Support technique</option>
-                                <option value="Partnership">Partenariat</option>
-                                <option value="Other">Autre</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message *</label>
-                            <textarea id="message" name="message" rows="5" required
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
-                        </div>
-
-                        <div class="flex items-center">
-                            <input type="checkbox" id="consent" name="consent" required
-                                class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                            <label for="consent" class="ml-2 block text-sm text-gray-700">
-                                J'accepte la politique de confidentialité *
-                            </label>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition flex items-center justify-center">
-                            <span id="submitText">Envoyer le message</span>
-                            <i id="submitIcon" class="fas fa-paper-plane ml-2"></i>
-                            <i id="loadingIcon" class="fas fa-spinner fa-spin ml-2 hidden"></i>
-                        </button>
-
-                        <div id="formSuccess" class="hidden p-4 bg-green-100 text-green-700 rounded-lg text-center">
-                            Message envoyé avec succès ! Nous vous répondrons rapidement.
-                        </div>
-                        <div id="formError" class="hidden p-4 bg-red-100 text-red-700 rounded-lg text-center">
-                            Une erreur est survenue. Veuillez réessayer ou nous contacter directement.
-                        </div>
-                    </form>
+    <main class="pt-24">
+        <!-- Ton code start here -->
+        <section class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-5 p-5 items-center">
+                <div class="col-span-3">
+                    <p class="mb-3 text-zinc-600 text-sm font-medium uppercase">
+                        Contactez-nous
+                    </p>
+                    <h2 class="text-5xl font-bold text-balance">
+                        Prenez contact avec nous. <br />
+                        Nous sommes là pour vous aider.
+                    </h2>
                 </div>
-
-                <!-- Infos Contact + Carte -->
-                <div class="space-y-8">
-                    <div class="bg-white p-8 rounded-xl shadow-lg">
-                        <h2 class="text-2xl font-bold text-gray-900 mb-6">Nos coordonnées</h2>
-
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg text-blue-600">
-                                    <i class="fas fa-map-marker-alt text-lg"></i>
-                                </div>
-                                <div class="ml-4">
-                                    <h3 class="text-lg font-medium text-gray-900">Adresse</h3>
-                                    <p class="text-gray-600">123 Rue du Digital<br>75000 Paris, France</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg text-blue-600">
-                                    <i class="fas fa-phone-alt text-lg"></i>
-                                </div>
-                                <div class="ml-4">
-                                    <h3 class="text-lg font-medium text-gray-900">Téléphone</h3>
-                                    <p class="text-gray-600">+33 1 23 45 67 89<br>Lun-Ven : 9h-18h</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg text-blue-600">
-                                    <i class="fas fa-envelope text-lg"></i>
-                                </div>
-                                <div class="ml-4">
-                                    <h3 class="text-lg font-medium text-gray-900">Email</h3>
-                                    <p class="text-gray-600">contact@websolutions.com<br>Support :
-                                        support@websolutions.com</p>
-                                </div>
-                            </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="py-6">
+                <form class="bg-white p-8 w-full">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-zinc-700 text-sm font-medium">Nom</label>
+                            <input type="text"
+                                class="w-full bg-transparent border-b border-zinc-300 text-zinc-900 focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2" />
+                        </div>
+                        <div>
+                            <label class="block text-zinc-700 text-sm font-medium">Email</label>
+                            <input type="email"
+                                class="w-full bg-transparent border-b border-zinc-300 text-zinc-900 focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2" />
+                        </div>
+                        <div>
+                            <label class="block text-zinc-700 text-sm font-medium">Telephone
+                                (optional)</label>
+                            <input type="text"
+                                class="w-full bg-transparent border-b border-zinc-300 text-zinc-900 focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2" />
                         </div>
                     </div>
-
-                    <!-- Carte Google Maps (intégration iframe) -->
-                    <div class="h-80 bg-gray-200 rounded-xl overflow-hidden shadow-lg">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.99144060821!2d2.292292615509614!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1620000000000!5m2!1sfr!2sfr"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            class="filter grayscale(20%) contrast(1.1)"></iframe>
+    
+                    <div class="mt-6">
+                        <label class="block text-zinc-700 text-sm font-medium">Message</label>
+                        <textarea
+                            class="w-full bg-transparent border-b border-zinc-300 text-zinc-900 focus:outline-none focus:border-blue-500 py-2 h-24"></textarea>
                     </div>
-
-                    <!-- Réseaux Sociaux -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg">
-                        <h3 class="text-lg font-medium text-gray-900 mb-4">Suivez-nous</h3>
-                        <div class="flex space-x-4">
-                            <a href="#"
-                                class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-200 transition">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#"
-                                class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-200 transition">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#"
-                                class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-200 transition">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#"
-                                class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-200 transition">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
+    
+                    <div class="mt-6">
+                        <button type="submit"
+                            class="flex items-center gap-3 bg-blue-600 text-white px-6 py-3 rounded-full w-full md:w-auto hover:bg-blue-500 transition duration-300 cursor-pointer">
+                            <span>Laissez-nous un message</span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Contact infos -->
+        <section class="py-30 overflow-hidden px-8 md:px-6 relative">
+            <!-- Carte Google Maps en fond -->
+            <div class="absolute inset-0 -z-10">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.8614569699203!2d15.302569174815112!3d-4.306792795667175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3b9de3c4aba3%3A0x5afbf94f45e2ebd3!2scoreasofts!5e1!3m2!1sen!2scd!4v1745542139594!5m2!1sen!2scd"
+                    width="1550" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        
+        <section class="py-18 overflow-hidden px-8 md:px-6 relative">
+            <!-- Image de fond -->
+            <div class="absolute inset-0 -z-10">
+                <img src="../assets/bg_contact.svg" class="h-full w-full object-cover" alt="" />
+            </div>
+        
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start relative z-0">
+                <!-- Texte principal -->
+                <div class="md:col-span-1">
+                    <h3 class="text-zinc-600 text-sm font-medium mb-3 uppercase">
+                        Nos contacts
+                    </h3>
+                    <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mt-2 text-balance">
+                        Nous sommes toujours heureux de vous aider
+                    </h2>
+                </div>
+        
+                <!-- Email -->
+                <div>
+                    <h4 class="text-lg font-semibold text-zinc-900">
+                        Adresse Email
+                    </h4>
+                    <div class="w-6 border-t-2 border-zinc-900 d my-2"></div>
+                    <p class="text-zinc-800 font-semibold">
+                        help@infinitytect.com
+                    </p>
+                    <p class="text-zinc-600 text-sm mt-2">
+                        Heures d'assistance : <br />
+                        Du Lundi au Vendredi, de 6h à 20h
+                    </p>
+                </div>
+        
+                <!-- Phone Number -->
+                <div>
+                    <h4 class="text-lg font-semibold text-zinc-900">
+                        Numéros
+                    </h4>
+                    <div class="w-6 border-t-2 border-zinc-900 d my-2"></div>
+                    <p class="text-zinc-800 font-semibold">
+                        (243) 810 000 000 <br />
+                        (243) 999 000 000
+                    </p>
+                    <p class="text-zinc-600 text-sm mt-2">
+                        Heures d'assistance : <br />
+                        Du lundi au vendredi, de 6h à 20h
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- CTA Newsletter -->
+        <section class="bg-blue-600 py-20 px-6">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:text-left text-center">
+                <div>
+                    <h2 class="text-white text-2xl lg:text-3xl font-bold">
+                        S'abonner à notre Newsletter
+                    </h2>
+                    <p class="text-blue-200 mt-2 max-w-2xl md:text-balance text-base">
+                        Abonnez-vous à notre newsletter : Recevez les actualités tech,
+                        tendances, analyses et innovations directement dans votre boîte
+                        mail. Ne manquez aucune mise à jour !
+                    </p>
+                </div>
+                <!-- Formulaire -->
+                <div class="mt-6 flex justify-center">
+                    <div class="relative w-full max-w-lg">
+                        <input type="email" placeholder="Saisissez votre email"
+                            class="w-full bg-blue-500 text-white placeholder-blue-200 py-3 px-4 pr-24 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-300" />
+                        <button
+                            class="absolute top-1.5 right-1 transform -translate-y-0.5 bg-white text-blue-600 font-semibold px-6 py-2 rounded-full hover:bg-gray-100 transition">
+                            S'abonner
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 mt-6 lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="#" class="flex items-center">
-                        <img src="" class="h-8 me-3" alt="Coreasofts" />
+                        <!-- <img src="" class="h-8 me-3" alt="Coreasofts" /> -->
                         <span class="self-center text-2xl font-semibold whitespace-nowrap">Coreasofts</span>
                     </a>
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Liens court</h2>
-                        <ul class="text-gray-500  font-medium">
-                            <li class="mb-4">
-                                <a href="https://flowbite.com/" class="hover:underline">Services</a>
+                        <ul class="text-gray-600 font-medium">
+                            <li class="">
+                                <a href="./public/pages/services.html" class="hover:underline">Services</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:underline">Projets</a>
+                                <a href="./public/pages/projects.html" class="hover:underline">Projets</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:underline">Contacts</a>
+                                <a href="./public/pages/contact.html" class="hover:underline">Contacts</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Nos réseaux</h2>
-                        <ul class="text-gray-500  font-medium">
-                            <li class="mb-4">
-                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                        <ul class="text-gray-600  font-medium">
+                            <li class="">
+                                <a href="#" class="hover:underline ">Github</a>
                             </li>
                             <li>
-                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                                <a href="#" class="hover:underline">Discord</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Twitter</a>
                             </li>
                         </ul>
                     </div>
@@ -339,43 +325,16 @@
             </div>
             <hr class="my-6 border-zinc-950/5 sm:mx-auto lg:my-8" />
             <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm text-gray-500 sm:text-center ">&copy; 2025. All Rights Reserved.
+                <span class="text-sm text-gray-600 sm:text-center ">&copy; 2025. All Rights Reserved.
                 </span>
                 <div class="flex mt-4 sm:justify-center sm:mt-0">
-                    <span class="text-sm text-gray-500 sm:text-center ">By Coreasofts</span>
+                    <span class="text-sm text-gray-600 sm:text-center ">By Coreasofts</span>
                 </div>
             </div>
         </div>
     </footer>
 
     <script type="module" src="/src/main.js"></script>
-    <!-- Script pour le formulaire -->
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Afficher l'icône de chargement
-            document.getElementById('submitText').textContent = 'Envoi en cours...';
-            document.getElementById('submitIcon').classList.add('hidden');
-            document.getElementById('loadingIcon').classList.remove('hidden');
-
-            // Simuler un envoi (remplacez par un vrai appel API avec axios/fetch)
-            setTimeout(() => {
-                // Cacher les icônes et afficher le message de succès
-                document.getElementById('submitText').textContent = 'Envoyer le message';
-                document.getElementById('submitIcon').classList.remove('hidden');
-                document.getElementById('loadingIcon').classList.add('hidden');
-
-                document.getElementById('formSuccess').classList.remove('hidden');
-                document.getElementById('contactForm').reset();
-
-                // Cacher le message après 5s
-                setTimeout(() => {
-                    document.getElementById('formSuccess').classList.add('hidden');
-                }, 5000);
-            }, 1500);
-        });
-    </script>
 </body>
 
 </html>
